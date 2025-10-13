@@ -914,8 +914,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>Complete Auto & Motorcycle Parts Solutions</h2>
-            <p>Your trusted partner for high-quality automotive and motorcycle parts. Worldwide shipping with OEM standards.</p>
+            <h2>Complete Auto,Motorcycle,Agricultural machinery Parts Solutions</h2>
+            <p>Your trusted partner for high-quality parts with OEM standards.</p>
             <div>
                 <a href="#products" class="btn">Explore Products</a>
                 <a href="#contact" class="btn btn-outline">Request Catalog</a>
@@ -927,12 +927,12 @@
     <section id="about" class="about">
         <div class="section-title">
             <h2>About SYGPARTS</h2>
-            <p>Your one-stop solution for all automotive and motorcycle parts since 2010</p>
+            <p>Your one-stop solution for all automotive,motorcycle and agricultural machinery parts since 2010</p>
         </div>
         <div class="about-content">
             <div class="about-text">
                 <h3>Comprehensive Automotive Solutions</h3>
-                <p>SYGPARTS specializes in providing a complete range of high-quality automotive parts and motorcycle lighting solutions. With our extensive industry experience and commitment to excellence, we serve as a trusted partner for businesses worldwide.</p>
+                <p>SYGPARTS specializes in providing a complete range of high-quality automotive,motorcycle and agricultural machinery spare parts & accessories solutions. With our extensive industry experience and commitment to excellence, we serve as a trusted partner for businesses worldwide.</p>
                 <p>Our product portfolio includes engine components, chassis parts, lighting systems, bumpers, body parts, and a wide range of accessories for all major vehicle makes and models.</p>
                 
                 <div class="about-features">
@@ -984,13 +984,14 @@
     <section id="products" class="products">
         <div class="section-title">
             <h2>Our Product Lines</h2>
-            <p>Comprehensive range of automotive and motorcycle parts</p>
+            <p>Comprehensive range of automotive,motorcycle and agricultural machinery parts</p>
         </div>
         
         <div class="product-filters">
             <button class="filter-btn active">All Products</button>
             <button class="filter-btn">Auto Parts</button>
-            <button class="filter-btn">Motorcycle Lighting</button>
+            <button class="filter-btn">Motorcycle Parts</button>
+            <button class="filter-btn">Agricultural machinery Parts</button>
             <button class="filter-btn">Engine Components</button>
             <button class="filter-btn">New Arrivals</button>
         </div>
@@ -1068,70 +1069,31 @@
                 </div>
             </div>
         </div>
+
+        <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auto Lighting">
+                    <div class="product-badge">Auto Lighting</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Wheels & Tires</div>
+                    <h3 class="product-name">Agricultural wheels</h3>
+                    <p class="product-description">IATF16949 Certified System.</p>
+                    <div class="product-meta">
+                        <div class="product-vehicle">
+                            <i class="fas fa-car"></i> Universal Fit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div style="text-align: center; margin-top: 3rem;">
             <a href="#" class="btn">View Full Product Catalog</a>
         </div>
     </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="section-title">
-            <h2>Industry Insights</h2>
-            <p>Latest news, tips, and updates from the automotive industry</p>
-        </div>
-        
-        <div class="blog-grid">
-            <!-- Blog 1 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auto Parts">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-date"><i class="far fa-calendar"></i> July 15, 2023</span>
-                        <span class="blog-author"><i class="far fa-user"></i> Tech Team</span>
-                    </div>
-                    <h3 class="blog-title">How to Identify Quality Replacement Parts</h3>
-                    <p class="blog-excerpt">Learn the key indicators of high-quality automotive parts and how to avoid counterfeit products.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Blog 2 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="https://images.unsplash.com/photo-1625763689442-1a1d75b72a8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Motorcycle Lighting">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-date"><i class="far fa-calendar"></i> July 5, 2023</span>
-                        <span class="blog-author"><i class="far fa-user"></i> Product Manager</span>
-                    </div>
-                    <h3 class="blog-title">Upgrading Your Motorcycle Lighting System</h3>
-                    <p class="blog-excerpt">A comprehensive guide to choosing and installing the right lighting system for your motorcycle.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <!-- Blog 3 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Industry Trends">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span class="blog-date"><i class="far fa-calendar"></i> June 28, 2023</span>
-                        <span class="blog-author"><i class="far fa-user"></i> Industry Analyst</span>
-                    </div>
-                    <h3 class="blog-title">2023 Automotive Aftermarket Trends</h3>
-                    <p class="blog-excerpt">Explore the latest trends shaping the global automotive parts industry and what to expect in the coming year.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-title">
