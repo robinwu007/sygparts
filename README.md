@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYGPARTS | Auto & Motorcycle Parts Solutions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>SYGPARTS | Global Auto Parts Supply Chain Solution Provider</title>
+    <meta name="description" content="One-stop full supply chain solutions for European, American, Japanese, Korean, and Chinese car parts. Your professional sourcing partner in China.">
+    <meta property="og:title" content="SYGPARTS - Professional Auto Parts Supply Chain">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?auto=format&fit=crop&w=800&q=80">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary: #1a2a4f;
-            --secondary: #d4af37;
-            --accent: #2a5a8c;
-            --light: #f5f5f5;
-            --dark: #121212;
-            --gray: #e0e0e0;
-            --text: #333333;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --primary: #0f172a; /* 深邃蓝-专业感 */
+            --secondary: #fbbf24; /* 工业黄-点睛之笔 */
+            --accent: #3b82f6;
+            --light: #f8fafc;
+            --text: #334155;
+            --dark: #020617;
+            --gray: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--light);
-            color: var(--text);
-            line-height: 1.6;
-        }
-        
-        /* Header & Navigation */
+
+        /* 沿用并优化你提供的基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
+
         header {
             background-color: var(--primary);
             padding: 1rem 5%;
@@ -39,8 +35,9 @@
             top: 0;
             z-index: 1000;
             box-shadow: var(--shadow);
+            border-bottom: 2px solid var(--secondary);
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
@@ -48,1269 +45,271 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo h1 {
-            color: white;
-            font-size: 1.8rem;
-            margin-left: 10px;
-        }
-        
-        .logo span {
-            color: var(--secondary);
-        }
-        
-        .logo-icon {
-            background-color: var(--secondary);
-            color: var(--primary);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            font-size: 1.2rem;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            position: relative;
-            margin-left: 1.5rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-        }
-        
-        nav ul li a::after {
-            content: '\f107';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            margin-left: 5px;
-            font-size: 0.8rem;
-        }
-        
-        nav ul li a:hover,
-        nav ul li a.active {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
-        
-        /* Dropdown menu */
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            min-width: 200px;
-            box-shadow: var(--shadow);
-            border-radius: 5px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.3s ease;
-            z-index: 100;
-        }
-        
-        .dropdown-menu li {
-            margin: 0;
-            width: 100%;
-        }
-        
-        .dropdown-menu a {
-            color: var(--text);
-            padding: 10px 15px;
-            display: block;
-            border-bottom: 1px solid var(--gray);
-        }
-        
-        .dropdown-menu a::after {
-            content: '';
-        }
-        
-        .dropdown-menu a:hover {
-            background-color: var(--primary);
-            color: white;
-        }
-        
-        nav ul li:hover .dropdown-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
+
+        .logo h1 { color: white; font-size: 1.8rem; font-weight: 700; }
+        .logo span { color: var(--secondary); }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 1.5rem; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 0.95rem; }
+        nav ul li a:hover { color: var(--secondary); }
+
+        /* Hero Section - 解决一站式方案的视觉 */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 90vh;
             display: flex;
             align-items: center;
             text-align: center;
             color: white;
             padding: 0 5%;
         }
-        
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hero h2 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
+
+        .hero-content { max-width: 900px; margin: 0 auto; }
+        .hero h2 { font-size: 3.5rem; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero h2 span { color: var(--secondary); }
+        .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; color: #cbd5e1; }
+
         .btn {
             display: inline-block;
             background-color: var(--secondary);
             color: var(--primary);
-            padding: 12px 30px;
-            border-radius: 30px;
+            padding: 15px 40px;
+            border-radius: 4px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            border: 2px solid var(--secondary);
+            transition: 0.3s;
         }
-        
-        .btn:hover {
-            background-color: transparent;
-            color: var(--secondary);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            color: var(--secondary);
-            margin-left: 15px;
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
-        
-        /* Sections */
-        section {
-            padding: 5rem 5%;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--secondary);
-        }
-        
-        .section-title p {
-            max-width: 700px;
-            margin: 1rem auto 0;
-            color: #666;
-        }
-        
-        /* About Section */
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .about-text {
-            flex: 1;
-        }
-        
-        .about-text h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-        
-        .about-text p {
-            margin-bottom: 1.5rem;
-        }
-        
-        .about-features {
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(251, 191, 36, 0.3); }
+
+        /* Solutions Section - 强化车系覆盖 */
+        section { padding: 6rem 5%; }
+        .section-title { text-align: center; margin-bottom: 4rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+        .section-title .bar { width: 80px; height: 4px; background: var(--secondary); margin: 0 auto; }
+
+        .solution-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .feature {
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .feature-icon {
-            background-color: rgba(42, 90, 140, 0.1);
-            color: var(--accent);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-        
-        .feature-text h4 {
-            margin-bottom: 5px;
-            color: var(--primary);
-        }
-        
-        .about-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-        
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Products Section */
-        .products {
-            background-color: #f8f9fa;
-        }
-        
-        .product-filters {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .filter-btn {
-            background-color: white;
-            border: 2px solid var(--gray);
-            padding: 8px 20px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .filter-btn.active,
-        .filter-btn:hover {
-            background-color: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        .product-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-            position: relative;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .product-image {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .product-card:hover .product-image img {
-            transform: scale(1.1);
-        }
-        
-        .product-badge {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: var(--secondary);
-            color: var(--primary);
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-        
-        .product-info {
-            padding: 1.5rem;
-        }
-        
-        .product-category {
-            color: var(--accent);
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-        
-        .product-name {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-        
-        .product-description {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-        
-        .product-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-        
-        .product-vehicle {
-            display: flex;
-            align-items: center;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .product-vehicle i {
-            margin-right: 5px;
-            color: var(--accent);
-        }
-        
-        /* Blog Section */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .blog-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .blog-image {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .blog-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .blog-card:hover .blog-image img {
-            transform: scale(1.05);
-        }
-        
-        .blog-content {
-            padding: 1.5rem;
-        }
-        
-        .blog-meta {
-            display: flex;
-            color: #777;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-        
-        .blog-date {
-            margin-right: 15px;
-        }
-        
-        .blog-author {
-            color: var(--accent);
-        }
-        
-        .blog-title {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-        
-        .blog-excerpt {
-            color: #666;
-            margin-bottom: 15px;
-        }
-        
-        .read-more {
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .read-more i {
-            margin-left: 5px;
-            transition: transform 0.3s ease;
-        }
-        
-        .read-more:hover i {
-            transform: translateX(5px);
-        }
-        
-        /* Contact Section */
-        .contact {
-            background-color: #f8f9fa;
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .contact-method {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-        }
-        
-        .contact-icon {
-            background-color: rgba(42, 90, 140, 0.1);
-            color: var(--accent);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-        
-        .contact-details h4 {
-            margin-bottom: 5px;
-            color: var(--primary);
-        }
-        
-        .contact-details p, 
-        .contact-details a {
-            color: #666;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .contact-details a:hover {
-            color: var(--accent);
-        }
-        
-        .social-links {
-            display: flex;
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary);
-            color: white;
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            background-color: var(--secondary);
-            transform: translateY(-3px);
-        }
-        
-        .contact-form {
-            background-color: white;
+
+        .solution-card {
+            background: white;
             padding: 2rem;
-            border-radius: 10px;
+            text-align: center;
+            border-radius: 8px;
             box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+            transition: 0.3s;
         }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
+        .solution-card:hover { border-top-color: var(--secondary); transform: translateY(-5px); }
+        .solution-card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; }
+
+        /* Parts Showcase - 版权合规的图片展示 */
+        .parts-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--primary);
+        .part-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
         }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--gray);
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
+        .part-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: grayscale(20%); transition: 0.5s;
         }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--accent);
+        .part-item:hover img { transform: scale(1.1); filter: grayscale(0%); }
+        .part-label {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white; padding: 20px;
         }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
+
+        /* 信任感区块 */
+        .trust-banner {
             background-color: var(--primary);
             color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            text-align: center;
+            padding: 4rem 5%;
         }
-        
-        .submit-btn:hover {
-            background-color: var(--secondary);
-        }
-        
+
         /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: #bbb;
-            padding: 4rem 5% 2rem;
-        }
-        
+        footer { background-color: var(--dark); color: #94a3b8; padding: 4rem 5% 2rem; }
         .footer-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 3rem; max-width: 1200px; margin: 0 auto;
         }
-        
-        .footer-col h4 {
-            color: white;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-            position: relative;
-            padding-bottom: 10px;
+        .footer-col h4 { color: white; margin-bottom: 1.5rem; }
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background: #25d366; color: white;
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 2000; text-decoration: none;
         }
-        
-        .footer-col h4::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--secondary);
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary);
-            padding-left: 5px;
-        }
-        
-        .footer-text {
-            margin-bottom: 15px;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            margin-top: 15px;
-        }
-        
-        .newsletter-input {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 5px 0 0 5px;
-        }
-        
-        .newsletter-btn {
-            background-color: var(--secondary);
-            color: var(--dark);
-            border: none;
-            padding: 0 20px;
-            border-radius: 0 5px 5px 0;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            margin-top: 2rem;
-            border-top: 1px solid #333;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .about-content {
-                flex-direction: column;
-            }
-            
-            .hero h2 {
-                font-size: 2.8rem;
-            }
-        }
-        
+
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background-color: var(--primary);
-                flex-direction: column;
-                padding: 1rem 0;
-                box-shadow: var(--shadow);
-            }
-            
-            nav ul.show {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 0;
-                text-align: center;
-                width: 100%;
-            }
-            
-            nav ul li a {
-                display: block;
-                padding: 12px;
-                border-radius: 0;
-                justify-content: center;
-            }
-            
-            .dropdown-menu {
-                position: static;
-                display: none;
-                width: 100%;
-                box-shadow: none;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-            }
-            
-            nav ul li:hover .dropdown-menu {
-                display: block;
-            }
-            
-            .dropdown-menu a {
-                text-align: center;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-            
-            .btn {
-                display: block;
-                margin: 10px auto;
-                max-width: 250px;
-            }
-            
-            .btn-outline {
-                margin-left: 0;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .about-features {
-                grid-template-columns: 1fr;
-            }
-            
-            .product-grid,
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero {
-                height: 80vh;
-            }
+            .hero h2 { font-size: 2.2rem; }
+            nav ul { display: none; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+
     <header>
         <div class="header-container">
             <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
                 <h1>SYG<span>PARTS</span></h1>
             </div>
             <nav>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul id="navMenu">
-                    <li><a href="#" class="active">Home</a></li>
-                    
-                    <li>
-                        <a href="#about">About</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Company History</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Quality Assurance</a></li>
-                            <li><a href="#">Certifications</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="#products">Products</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Auto Parts <i class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu nested">
-                                    <li><a href="#">Engine Components</a></li>
-                                    <li><a href="#">Chassis Parts</a></li>
-                                    <li><a href="#">Lighting Systems</a></li>
-                                    <li><a href="#">Bumpers & Body</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Motorcycle Parts <i class="fas fa-chevron-right"></i></a>
-                                <ul class="dropdown-menu nested">
-                                    <li><a href="#">Headlight Assemblies</a></li>
-                                    <li><a href="#">Tail Lights</a></li>
-                                    <li><a href="#">Turn Signals</a></li>
-                                    <li><a href="#">LED Conversion Kits</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Special Offers</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="#blog">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Industry News</a></li>
-                            <li><a href="#">Product Guides</a></li>
-                            <li><a href="#">Installation Tips</a></li>
-                            <li><a href="#">Maintenance Advice</a></li>
-                        </ul>
-                    </li>
-                    
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">Supply Chain</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Complete Auto,Motorcycle,Agricultural machinery Parts Solutions</h2>
-            <p>Your trusted partner for high-quality parts with OEM standards.</p>
+            <h2>China's Leading <span>Auto Parts</span> Supply Chain Integrator</h2>
+            <p>One-stop solution for European, American, Japanese, Korean, and Chinese vehicles. We integrate China's top supply chain resources to solve all your parts challenges.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <div class="section-title">
+            <h2>Comprehensive Solutions</h2>
+            <div class="bar"></div>
+            <p>No matter the part, no matter the brand - we have the solution.</p>
+        </div>
+        <div class="solution-grid">
+            <div class="solution-card">
+                <i class="fas fa-car-side"></i>
+                <h4>European Cars</h4>
+                <p>VW, BMW, Mercedes, Audi, etc.</p>
+            </div>
+            <div class="solution-card">
+                <i class="fas fa-truck-pickup"></i>
+                <h4>American Cars</h4>
+                <p>Ford, GM, Jeep, Chrysler, etc.</p>
+            </div>
+            <div class="solution-card">
+                <i class="fas fa-shuttle-van"></i>
+                <h4>Asian Cars</h4>
+                <p>Toyota, Honda, Hyundai, Kia, etc.</p>
+            </div>
+            <div class="solution-card">
+                <i class="fas fa-charging-station"></i>
+                <h4>Chinese Brands</h4>
+                <p>BYD, Geely, Chery, GWM (Full EV Range)</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-banner">
+        <h3>Why Partner with SYGPARTS?</h3>
+        <p style="margin-top: 15px; color: #94a3b8; max-width: 800px; margin-inline: auto;">We are your eyes in China. We consolidate orders from multiple factories, perform strict quality inspections, and provide professional logistics - saving you time and cost.</p>
+    </div>
+
+    <section id="products">
+        <div class="section-title">
+            <h2>Global Supply Capability</h2>
+            <div class="bar"></div>
+        </div>
+        <div class="parts-gallery">
+            <div class="part-item">
+                <img src="https://images.unsplash.com/photo-1635437536607-b8572f443763?auto=format&fit=crop&w=600&q=80" alt="Engine Parts">
+                <div class="part-label"><h4>Engine Systems</h4></div>
+            </div>
+            <div class="part-item">
+                <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=600&q=80" alt="Brake Systems">
+                <div class="part-label"><h4>Brake & Suspension</h4></div>
+            </div>
+            <div class="part-item">
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Body Parts">
+                <div class="part-label"><h4>Body & Lighting</h4></div>
+            </div>
+            <div class="part-item">
+                <img src="https://images.unsplash.com/photo-1621905252507-b35482cd84b0?auto=format&fit=crop&w=600&q=80" alt="EV Components">
+                <div class="part-label"><h4>New Energy EV Parts</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: #f1f5f9;">
+        <div class="contact-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1200px; margin: 0 auto;">
             <div>
-                <a href="#products" class="btn">Explore Products</a>
-                <a href="#contact" class="btn btn-outline">Request Catalog</a>
+                <h2 style="font-size: 2rem; color: var(--primary);">Start Your Sourcing Today</h2>
+                <p style="margin: 20px 0;">Looking for a specific part or need a full supply chain partner? Send us your inquiry list (OE numbers, car models), and we'll handle the rest.</p>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> Professional Sourcing Service</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> Quality Inspection Report</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> Consolidated Shipping</li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-title">
-            <h2>About SYGPARTS</h2>
-            <p>Your one-stop solution for all automotive,motorcycle and agricultural machinery parts since 2010</p>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Comprehensive Automotive Solutions</h3>
-                <p>SYGPARTS specializes in providing a complete range of high-quality automotive,motorcycle and agricultural machinery spare parts & accessories solutions. With our extensive industry experience and commitment to excellence, we serve as a trusted partner for businesses worldwide.</p>
-                <p>Our product portfolio includes engine components, chassis parts, lighting systems, bumpers, body parts, and a wide range of accessories for all major vehicle makes and models.</p>
-                
-                <div class="about-features">
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Global Distribution</h4>
-                            <p>Serving clients in 60+ countries worldwide</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Quality Certified</h4>
-                            <p>ISO 9001 certified manufacturing facilities</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-boxes"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Extensive Inventory</h4>
-                            <p>Over 15,000 SKUs ready for immediate shipment</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Technical Support</h4>
-                            <p>Expert assistance for product selection and installation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SYGPARTS Warehouse">
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="section-title">
-            <h2>Our Product Lines</h2>
-            <p>Comprehensive range of automotive,motorcycle and agricultural machinery parts</p>
-        </div>
-        
-        <div class="product-filters">
-            <button class="filter-btn active">All Products</button>
-            <button class="filter-btn">Auto Parts</button>
-            <button class="filter-btn">Motorcycle Parts</button>
-            <button class="filter-btn">Agricultural machinery Parts</button>
-            <button class="filter-btn">Engine Components</button>
-            <button class="filter-btn">New Arrivals</button>
-        </div>
-        
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engine Parts">
-                    <div class="product-badge">Auto Engine</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Engine Components</div>
-                    <h3 class="product-name">Engine Control Module</h3>
-                    <p class="product-description">OEM-compatible ECM for various vehicle models with advanced diagnostics capabilities.</p>
-                    <div class="product-meta">
-                        <div class="product-vehicle">
-                            <i class="fas fa-car"></i> Toyota, Honda, Ford
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Motorcycle Headlight">
-                    <div class="product-badge">Motorcycle</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Lighting Systems</div>
-                    <h3 class="product-name">LED Headlight Assembly</h3>
-                    <p class="product-description">7-inch waterproof LED headlight with halo ring for improved visibility and style.</p>
-                    <div class="product-meta">
-                        <div class="product-vehicle">
-                            <i class="fas fa-motorcycle"></i> Universal Fit
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chassis Parts">
-                    <div class="product-badge">Auto Chassis</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Suspension System</div>
-                    <h3 class="product-name">Complete Strut Assembly</h3>
-                    <p class="product-description">Premium quality strut assemblies for smooth ride and precise handling.</p>
-                    <div class="product-meta">
-                        <div class="product-vehicle">
-                            <i class="fas fa-car"></i> Sedans, SUVs
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auto Lighting">
-                    <div class="product-badge">Auto Lighting</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Lighting Systems</div>
-                    <h3 class="product-name">HID Conversion Kit</h3>
-                    <p class="product-description">High-intensity discharge conversion kit with 6000K white light output.</p>
-                    <div class="product-meta">
-                        <div class="product-vehicle">
-                            <i class="fas fa-car"></i> Universal Fit
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auto Lighting">
-                    <div class="product-badge">Auto Lighting</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Wheels & Tires</div>
-                    <h3 class="product-name">Agricultural wheels</h3>
-                    <p class="product-description">IATF16949 Certified System.</p>
-                    <div class="product-meta">
-                        <div class="product-vehicle">
-                            <i class="fas fa-car"></i> Universal Fit
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="#" class="btn">View Full Product Catalog</a>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-            <p>Get in touch for product inquiries, technical support, or partnership opportunities</p>
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Our Location</h4>
-                        <p>123 Industrial Park, Guangzhou, China 510000</p>
-                    </div>
-                </div>
-                
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Phone & WhatsApp</h4>
-                        <p>+86 20 8888 7777</p>
-                        <p>+86 138 0013 8000 (WhatsApp)</p>
-                    </div>
-                </div>
-                
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p>sales@sygparts.com</p>
-                        <p>support@sygparts.com</p>
-                    </div>
-                </div>
-                
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Business Hours</h4>
-                        <p>Monday-Friday: 9:00 AM - 6:00 PM (GMT+8)</p>
-                        <p>Saturday: 10:00 AM - 4:00 PM</p>
-                        <p>Sunday: Closed</p>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" class="form-control" required>
-                            <option value="">Select an option</option>
-                            <option value="product">Product Inquiry</option>
-                            <option value="quote">Request Quote</option>
-                            <option value="support">Technical Support</option>
-                            <option value="partnership">Partnership</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Send Message</button>
+            <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow);">
+                <form>
+                    <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray);">
+                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--gray);">
+                    <textarea placeholder="Tell us what parts you need (Car Model/Year/OE Number)" style="width: 100%; padding: 12px; height: 120px; border: 1px solid var(--gray); margin-bottom: 15px;"></textarea>
+                    <button type="button" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Inquiry</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <h4>SYGPARTS</h4>
-                <p class="footer-text">Your trusted partner for premium automotive and motorcycle parts solutions since 2010. Quality products with worldwide distribution.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <p>Your expert partner in China's auto parts supply chain. Integrating resources for global success.</p>
             </div>
-            
-            <div class="footer-col">
-                <h4>Product Categories</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Engine Components</a></li>
-                    <li><a href="#">Chassis & Suspension</a></li>
-                    <li><a href="#">Lighting Systems</a></li>
-                    <li><a href="#">Body & Exterior</a></li>
-                    <li><a href="#">Electrical Parts</a></li>
-                    <li><a href="#">Motorcycle Parts</a></li>
-                </ul>
-            </div>
-            
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>
+                <ul style="list-style: none;">
+                    <li><a href="#" style="color: #94a3b8; text-decoration: none;">European Series</a></li>
+                    <li><a href="#" style="color: #94a3b8; text-decoration: none;">Japanese Series</a></li>
+                    <li><a href="#" style="color: #94a3b8; text-decoration: none;">China EV Parts</a></li>
                 </ul>
             </div>
-            
             <div class="footer-col">
-                <h4>Get Our Catalog</h4>
-                <p class="footer-text">Subscribe to receive our latest product catalog and special offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your Email" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
+                <h4>Connect</h4>
+                <div style="font-size: 1.5rem; display: flex; gap: 15px;">
+                    <a href="#" style="color: white;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2023 SYGPARTS. All Rights Reserved. | Comprehensive Auto & Motorcycle Parts Solutions</p>
+        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #1e293b; font-size: 0.8rem;">
+            &copy; 2026 SYGPARTS. All Rights Reserved.
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-        
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    navMenu.classList.remove('show');
-                }
-            });
-        });
-        
-        // Product Filtering
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                // In a real implementation, you would filter products here
-                // For this demo, we're just changing the button state
-            });
-        });
-        
-        // Contact Form Submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We will contact you shortly.');
-            contactForm.reset();
-        });
-        
-        // Nested dropdowns for desktop
-        const nestedDropdowns = document.querySelectorAll('.nested');
-        nestedDropdowns.forEach(dropdown => {
-            dropdown.style.display = 'none';
-            
-            const parentLink = dropdown.parentNode.querySelector('a');
-            parentLink.addEventListener('click', (e) => {
-                e.preventDefault();
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+    <a href="https://wa.me/你的号码" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
