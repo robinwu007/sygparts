@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYGPARTS | China's Leading Auto Parts Supply Chain Integrator</title>
+    
+    <meta property="og:title" content="SYGPARTS - Full Supply Chain Solutions">
+    <meta property="og:description" content="One-stop sourcing for European, American, Japanese, Korean and Chinese vehicles. Based in China, serving the world.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?q=80&w=1200">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #1a365d;    /* 专业深蓝 */
+            --secondary: #e63946;  /* 活力红 */
+            --accent: #f59e0b;     /* 工业金 */
+            --light: #f8fafc;
+            --dark: #0f172a;
+            --text: #334155;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+        header {
+            background-color: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo h1 { color: white; font-size: 1.6rem; font-weight: 800; letter-spacing: -1px; }
+        .logo span { color: var(--secondary); }
+        
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul li a { color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        nav ul li a:hover { color: var(--secondary); }
+
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+        .hero-content { max-width: 900px; padding: 0 20px; }
+        .hero-content h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
+        .hero-content h2 span { color: var(--accent); }
+        .hero-content p { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 40px; font-weight: 300; }
+        
+        .btn-group { display: flex; gap: 20px; justify-content: center; }
+        .btn { padding: 16px 35px; border-radius: 4px; text-decoration: none; font-weight: 700; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; display: inline-block; border: none; }
+        .btn-primary { background: var(--secondary); color: white; cursor: pointer; }
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); opacity: 0.9; }
+
+        .supply-chain { padding: 80px 5%; background: white; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h3 { font-size: 2.2rem; color: var(--primary); margin-bottom: 15px; }
+        .section-title .divider { width: 60px; height: 4px; background: var(--secondary); margin: 0 auto; }
+
+        .chain-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
+        .step-card { text-align: center; padding: 30px; position: relative; }
+        .step-icon { width: 80px; height: 80px; background: #f1f5f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--primary); transition: 0.3s; }
+        .step-card:hover .step-icon { background: var(--primary); color: white; }
+
+        .brands-section { padding: 80px 5%; background: #f1f5f9; }
+        .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .brand-card { 
+            background: linear-gradient(45deg, var(--primary), var(--accent)); 
+            height: 150px; border-radius: 8px; display: flex; flex-direction: column; 
+            align-items: center; justify-content: center; color: white; cursor: pointer; transition: 0.4s;
+        }
+        .brand-card:hover { filter: brightness(1.2); transform: scale(1.05); }
+        .brand-card i { font-size: 2.5rem; margin-bottom: 10px; opacity: 0.8; }
+
+        /* 修改：重构联系区域样式 */
+        .inquiry-section { padding: 80px 5%; background: white; }
+        .inquiry-container { 
+            max-width: 900px; margin: 0 auto; background: var(--dark); border-radius: 15px; 
+            padding: 60px; text-align: center; color: white; box-shadow: var(--shadow);
+        }
+        .contact-methods { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+        .contact-card { flex: 1; min-width: 250px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 10px; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1); }
+        .contact-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); }
+        .contact-card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 15px; }
+        .contact-card h4 { font-size: 1.2rem; margin-bottom: 10px; color: white; }
+        .contact-card a { color: #cbd5e1; text-decoration: none; font-size: 1.1rem; transition: 0.3s; }
+        .contact-card a:hover { color: var(--secondary); }
+        
+        .social-sticky {
+            position: fixed; left: 20px; top: 50%; transform: translateY(-50%);
+            display: flex; flex-direction: column; gap: 15px; z-index: 900;
+        }
+        .social-icon { 
+            width: 45px; height: 45px; background: white; border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            box-shadow: var(--shadow); color: var(--primary); text-decoration: none; transition: 0.3s;
+        }
+        .social-icon:hover { background: var(--secondary); color: white; }
+
+        .float-contact-group {
+            position: fixed; bottom: 30px; right: 30px;
+            display: flex; flex-direction: column; gap: 15px; z-index: 1000;
+        }
+        .float-btn {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: white; text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s;
+        }
+        .float-btn:hover { transform: scale(1.1); }
+        .whatsapp-btn { background-color: #25d366; }
+        .wechat-btn { background-color: #09b83e; position: relative; cursor: pointer; }
+        .wechat-btn:hover::before {
+            content: "WeChat ID: sygauto"; 
+            position: absolute; right: 75px; top: 50%; transform: translateY(-50%);
+            background: white; color: #333; padding: 8px 15px; border-radius: 5px;
+            font-size: 14px; font-weight: bold; white-space: nowrap; box-shadow: var(--shadow);
+        }
+
+        footer { background: var(--dark); color: #94a3b8; padding: 60px 5% 30px; text-align: center; }
+        
+        @media (max-width: 768px) {
+            .hero-content h2 { font-size: 2.2rem; }
+            nav { display: none; }
+            .inquiry-container { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo"><h1>SYG<span>PARTS</span></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#supply-chain">Solutions</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="social-sticky">
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your <span>Ultimate Hub</span> for China's Auto Parts</h2>
+            <p>Integrating full supply chain resources for European, American, Japanese, Korean, and Chinese vehicles. One-stop solution, zero hassle.</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">Get A Quote Now</a>
+                <a href="#supply-chain" class="btn btn-outline">Our Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="supply-chain" class="supply-chain">
+        <div class="section-title">
+            <h3>Supply Chain Integration</h3>
+            <div class="divider"></div>
+            <p style="margin-top:15px">We are not just a supplier; we are your strategic partner in China.</p>
+        </div>
+        <div class="chain-steps">
+            <div class="step-card">
+                <div class="step-icon"><i class="fas fa-search-plus"></i></div>
+                <h4>Sourcing</h4>
+                <p>Direct access to thousands of verified Tier-1 factories across China.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fas fa-check-double"></i></div>
+                <h4>QC Inspection</h4>
+                <p>Strict quality control and real-time photo/video reporting before shipping.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fas fa-box-open"></i></div>
+                <h4>Consolidation</h4>
+                <p>Combine multiple factory orders into one shipment to save your cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="brands-section">
+        <div class="section-title">
+            <h3>Full Vehicle Series Coverage</h3>
+            <div class="divider"></div>
+        </div>
+        <div class="brand-grid">
+            <div class="brand-card"><i class="fas fa-euro-sign"></i><h4>European Series</h4><small>VW, BMW, Mercedes, etc.</small></div>
+            <div class="brand-card"><i class="fas fa-flag-usa"></i><h4>American Series</h4><small>Ford, GM, Jeep, etc.</small></div>
+            <div class="brand-card"><i class="fas fa-torii-gate"></i><h4>Japanese Series</h4><small>Toyota, Honda, Nissan, etc.</small></div>
+            <div class="brand-card"><i class="fas fa-shuttle-van"></i><h4>Korean Series</h4><small>Hyundai, Kia, etc.</small></div>
+            <div class="brand-card"><i class="fas fa-bolt"></i><h4>Chinese Series</h4><small>BYD, Geely, Chery, etc.</small></div>
+        </div>
+    </section>
+
+    <section id="contact" class="inquiry-section">
+        <div class="inquiry-container">
+            <h3 style="font-size: 2.2rem; margin-bottom: 15px;">Get In Touch</h3>
+            <p style="opacity: 0.8; max-width: 600px; margin: 0 auto;">Skip the forms. Send us your OE numbers or inquiry list directly via email or social media. We will respond within 24 hours.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Inquiry</h4>
+                    <a href="mailto:info@sygparts.com">info@sygparts.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Office Location</h4>
+                    <a href="#">Ningbo, Zhejiang, China</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-weight:bold; color:white; margin-bottom:10px;">SYGPARTS SUPPLY CHAIN SOLUTIONS</p>
+        <p>&copy; 2026 All Rights Reserved. Based in China, Connecting the World.</p>
+    </footer>
+
+    <div class="float-contact-group">
+        <div class="float-btn wechat-btn" title="Contact via WeChat">
+            <i class="fab fa-weixin"></i>
+        </div>
+        <a href="https://wa.me/+8618358487817" class="float-btn whatsapp-btn" target="_blank" title="Contact via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+</html>
