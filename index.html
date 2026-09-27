@@ -1,251 +1,527 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYGPARTS | China's Leading Auto Parts Supply Chain Integrator</title>
-    
-    <meta property="og:title" content="SYGPARTS - Full Supply Chain Solutions">
-    <meta property="og:description" content="One-stop sourcing for European, American, Japanese, Korean and Chinese vehicles. Based in China, serving the world.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?q=80&w=1200">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary: #1a365d;    /* 专业深蓝 */
-            --secondary: #e63946;  /* 活力红 */
-            --accent: #f59e0b;     /* 工业金 */
-            --light: #f8fafc;
-            --dark: #0f172a;
-            --text: #334155;
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SYGPARTS | China Auto Parts Sourcing</title>
+  <meta name="description" content="China auto parts sourcing for importers, distributors, e-commerce sellers and commercial-vehicle specialists. Sourcing, supplier comparison, QC coordination and multi-supplier consolidation.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+:root{
+  --ink:#14202b;
+  --muted:#65717d;
+  --line:#dfe5ea;
+  --soft:#f5f7f8;
+  --soft2:#eef2f4;
+  --navy:#101c27;
+  --accent:#ef7b32;
+  --accent-dark:#c75f20;
+  --brand-red:#e63946;
+  --white:#ffffff;
+  --shadow:0 18px 60px rgba(17,31,43,.10);
+  --radius:24px;
+  --radius-sm:16px;
+  --container:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.container{width:min(var(--container),calc(100% - 40px));margin:0 auto}
+.section-pad{padding:104px 0}
+.section-alt{background:var(--soft)}
+.section-dark{background:var(--navy);color:#fff}
+.skip-link{position:absolute;left:-999px;top:auto}.skip-link:focus{left:16px;top:16px;z-index:999;background:#fff;padding:10px 14px}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
-        body { background-color: var(--light); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(223,229,234,.75)}
+.nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;flex-direction:column;gap:2px;min-width:220px;line-height:1.1}
+.brand-name{font-size:22px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.brand-name span{color:var(--brand-red)}
+.brand-copy small{font-size:8.5px;letter-spacing:.16em;color:var(--muted);font-weight:700;display:block;margin-top:3px}
+.nav{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:650}.nav a{color:#53616d}.nav a:hover{color:var(--ink)}.nav-cta{padding:11px 17px;border:1px solid var(--ink);border-radius:999px;color:var(--ink)!important}
+.menu-toggle{display:none;border:0;background:transparent;padding:7px}.menu-toggle span{display:block;width:23px;height:2px;background:var(--ink);margin:5px 0}
 
-        header {
-            background-color: rgba(26, 54, 93, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 5%;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid var(--secondary);
-        }
-        .header-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
-        .logo h1 { color: white; font-size: 1.6rem; font-weight: 800; letter-spacing: -1px; }
-        .logo span { color: var(--secondary); }
-        
-        nav ul { display: flex; list-style: none; gap: 30px; }
-        nav ul li a { color: #e2e8f0; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
-        nav ul li a:hover { color: var(--secondary); }
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.18em;color:#74818c;text-transform:uppercase}.eyebrow-dot{width:7px;height:7px;border-radius:999px;background:var(--accent)}
+h1{font-size:clamp(44px,6.2vw,76px);line-height:.98;letter-spacing:-.05em;margin:18px 0 24px}.hero h1 span{color:var(--accent)}
+.hero-lead{font-size:18px;line-height:1.65;color:var(--muted);max-width:650px;margin:0}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+.hero-actions{display:flex;gap:12px;margin:34px 0 20px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:12px;border:1px solid transparent;font-weight:750;font-size:13px;cursor:pointer;transition:.2s ease}.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px rgba(239,123,50,.22)}.btn-primary:hover{background:var(--accent-dark)}.btn-secondary{border-color:var(--line);background:#fff}.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#0b141c}
+.hero-notes{display:flex;gap:9px;flex-wrap:wrap}.hero-notes span{padding:7px 10px;border:1px solid var(--line);border-radius:999px;font-size:11px;color:#596671;background:#fff}
 
-        .hero {
-            height: 85vh;
-            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(15, 23, 42, 0.9)), 
-                        url('https://images.unsplash.com/photo-1486006396113-ad7302ff67f7?q=80&w=2000');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding-top: 80px;
-        }
-        .hero-content { max-width: 900px; padding: 0 20px; }
-        .hero-content h2 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
-        .hero-content h2 span { color: var(--accent); }
-        .hero-content p { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 40px; font-weight: 300; }
-        
-        .btn-group { display: flex; gap: 20px; justify-content: center; }
-        .btn { padding: 16px 35px; border-radius: 4px; text-decoration: none; font-weight: 700; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; display: inline-block; border: none; }
-        .btn-primary { background: var(--secondary); color: white; cursor: pointer; }
-        .btn-outline { border: 2px solid white; color: white; }
-        .btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); opacity: 0.9; }
+.hero-visual{background:linear-gradient(145deg,#f6f8f9 0%,#eef2f4 100%);border:1px solid #dde4e8;border-radius:30px;padding:22px;box-shadow:var(--shadow);min-height:505px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.visual-topline{display:flex;justify-content:space-between;color:#8a959f;font-size:9px;font-weight:850;letter-spacing:.14em}
+.sourcing-board{position:relative;min-height:405px;flex:1}
+.floating-card{background:rgba(255,255,255,.96);border:1px solid #dde4e8;box-shadow:0 12px 35px rgba(13,26,38,.09);border-radius:17px}
+.simple-board{display:grid;grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr);grid-template-rows:auto 1fr auto;gap:14px;align-items:start;padding:42px 12px 20px}
+.rfq-card{position:relative;width:auto;padding:15px;z-index:3;grid-column:1;grid-row:1 / span 2}.card-label{font-size:9px;letter-spacing:.16em;font-weight:900;color:#83909b;margin-bottom:11px}.rfq-mini-row{display:flex;justify-content:space-between;gap:12px;font-size:10px;padding:8px 0;border-bottom:1px solid #edf1f3}.rfq-mini-row b{font-weight:700}.rfq-mini-row span{color:#76838e}.rfq-status{margin-top:11px;font-size:9px;font-weight:900;color:#bb5a1f;letter-spacing:.12em}
+.match-arrow{grid-column:2;grid-row:1 / span 2;align-self:center;justify-self:center;font-size:25px;color:#bcc7ce;font-weight:500}
+.supplier-area{grid-column:3;grid-row:1 / span 2;position:relative;z-index:3}.supplier-heading{font-size:8px;letter-spacing:.15em;color:#8a979f;font-weight:900;margin-bottom:9px}.supplier-node.compact{position:relative;width:100%;padding:10px 10px 10px 14px;border-radius:13px;border:1px solid #d9e0e4;background:#fff;box-shadow:0 8px 20px rgba(13,26,38,.05);display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.supplier-node.compact b{display:block;font-size:10px}.supplier-node.compact small{display:block;font-size:8px;color:#7c8892;margin-top:1px}.supplier-node.compact em{font-style:normal;font-size:8px;color:#a0abb2;font-weight:800}.node-dot{position:absolute;width:6px;height:6px;border-radius:99px;background:var(--accent);left:0;top:17px;transform:translateX(-50%)}
+.decision-card{position:relative;width:auto;padding:13px 15px;z-index:4;grid-column:1 / span 2;grid-row:3;align-self:end;margin-top:2px}.decision-card strong{display:block;font-size:12px;letter-spacing:-.02em}.decision-pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.decision-pills span{font-size:7px;padding:4px 6px;background:#f0f3f5;border-radius:99px;color:#677581;font-weight:750}
+.ship-card{position:relative;width:auto;padding:12px;display:flex;align-items:center;gap:9px;z-index:4;grid-column:2 / span 2;grid-row:3;align-self:end}.ship-card b{display:block;font-size:11px}.ship-card small{display:block;color:#78848f;font-size:8px;margin-top:1px}.ship-icon{width:32px;height:32px;border-radius:11px;background:#edf1f3;color:#374855;display:grid;place-items:center}.ship-icon svg{width:22px;height:22px}
+.van-lineart{position:absolute;left:9%;bottom:5%;width:84%;color:#ccd5db;opacity:.42;z-index:1}.van-lineart svg{width:100%;height:auto}.visual-caption{display:flex;gap:8px;align-items:baseline;justify-content:flex-start;font-size:11px;color:#71808b}.visual-caption strong{color:#445560}
 
-        .supply-chain { padding: 80px 5%; background: white; }
-        .section-title { text-align: center; margin-bottom: 60px; }
-        .section-title h3 { font-size: 2.2rem; color: var(--primary); margin-bottom: 15px; }
-        .section-title .divider { width: 60px; height: 4px; background: var(--secondary); margin: 0 auto; }
+.trust-strip{background:#0d1822;color:#fff}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-grid>div{padding:20px 25px;border-right:1px solid rgba(255,255,255,.09)}.trust-grid>div:first-child{padding-left:0}.trust-grid>div:last-child{border-right:0}.trust-kicker{display:block;color:#7f8d98;font-size:9px;font-weight:900;letter-spacing:.16em;margin-bottom:4px}.trust-grid strong{font-size:13px;font-weight:700}
 
-        .chain-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
-        .step-card { text-align: center; padding: 30px; position: relative; }
-        .step-icon { width: 80px; height: 80px; background: #f1f5f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: var(--primary); transition: 0.3s; }
-        .step-card:hover .step-icon { background: var(--primary); color: white; }
+.section-heading{margin-bottom:42px}.section-heading.two-col{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end}.section-heading p{margin:0;color:var(--muted);font-size:15px;line-height:1.7}.section-heading.dark p{color:#aab7c0}.section-heading h2{font-size:clamp(32px,4.1vw,52px);line-height:1.05;letter-spacing:-.04em;margin:15px 0 0;max-width:800px}
+.feature-grid{display:grid;gap:16px}.feature-grid.three{grid-template-columns:repeat(3,1fr)}.feature-card{padding:28px;border:1px solid var(--line);border-radius:18px;background:#fff;min-height:252px;display:flex;flex-direction:column}.icon-box{width:34px;height:34px;border-radius:10px;background:#f0f3f4;display:grid;place-items:center;color:#61707b;font-size:10px;font-weight:850}.feature-card h3{font-size:20px;letter-spacing:-.02em;margin:26px 0 10px}.feature-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.7}.card-line{margin-top:auto;padding-top:24px;color:#8a949c;font-size:10px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
 
-        .brands-section { padding: 80px 5%; background: #f1f5f9; }
-        .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
-        .brand-card { 
-            background: linear-gradient(45deg, var(--primary), var(--accent)); 
-            height: 150px; border-radius: 8px; display: flex; flex-direction: column; 
-            align-items: center; justify-content: center; color: white; cursor: pointer; transition: 0.4s;
-        }
-        .brand-card:hover { filter: brightness(1.2); transform: scale(1.05); }
-        .brand-card i { font-size: 2.5rem; margin-bottom: 10px; opacity: 0.8; }
+.category-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.category-card{padding:23px;border:1px solid var(--line);border-radius:18px;background:#fff;display:flex;gap:18px;align-items:flex-start;min-height:150px}.category-card.featured{grid-column:span 2;background:#fffaf6;border-color:#f0d6c4}.category-icon{width:46px;height:46px;border-radius:14px;background:#f2f4f5;display:grid;place-items:center;font-size:15px;font-weight:850;flex:0 0 auto;color:#53626d}.featured .category-icon{background:#fff0e5;color:var(--accent)}.category-icon svg{width:25px;height:25px}.category-card h3{font-size:17px;margin:2px 0 7px}.category-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.65}.category-tag{display:inline-block;font-size:8px;font-weight:900;letter-spacing:.15em;color:var(--accent);margin-bottom:3px}
 
-        /* 修改：重构联系区域样式 */
-        .inquiry-section { padding: 80px 5%; background: white; }
-        .inquiry-container { 
-            max-width: 900px; margin: 0 auto; background: var(--dark); border-radius: 15px; 
-            padding: 60px; text-align: center; color: white; box-shadow: var(--shadow);
-        }
-        .contact-methods { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
-        .contact-card { flex: 1; min-width: 250px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 10px; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1); }
-        .contact-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-5px); }
-        .contact-card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 15px; }
-        .contact-card h4 { font-size: 1.2rem; margin-bottom: 10px; color: white; }
-        .contact-card a { color: #cbd5e1; text-decoration: none; font-size: 1.1rem; transition: 0.3s; }
-        .contact-card a:hover { color: var(--secondary); }
-        
-        .social-sticky {
-            position: fixed; left: 20px; top: 50%; transform: translateY(-50%);
-            display: flex; flex-direction: column; gap: 15px; z-index: 900;
-        }
-        .social-icon { 
-            width: 45px; height: 45px; background: white; border-radius: 50%; 
-            display: flex; align-items: center; justify-content: center; 
-            box-shadow: var(--shadow); color: var(--primary); text-decoration: none; transition: 0.3s;
-        }
-        .social-icon:hover { background: var(--secondary); color: white; }
+.process-wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.process-step{border-top:2px solid #dbe1e5;padding:17px 5px 0}.process-step span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#f0f3f5;font-size:9px;font-weight:900;color:#6a7782}.process-step h3{font-size:15px;margin:17px 0 8px}.process-step p{font-size:11px;color:var(--muted);line-height:1.7;margin:0}
 
-        .float-contact-group {
-            position: fixed; bottom: 30px; right: 30px;
-            display: flex; flex-direction: column; gap: 15px; z-index: 1000;
-        }
-        .float-btn {
-            width: 60px; height: 60px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 30px; color: white; text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s;
-        }
-        .float-btn:hover { transform: scale(1.1); }
-        .whatsapp-btn { background-color: #25d366; }
-        .wechat-btn { background-color: #09b83e; position: relative; cursor: pointer; }
-        .wechat-btn:hover::before {
-            content: "WeChat ID: sygauto"; 
-            position: absolute; right: 75px; top: 50%; transform: translateY(-50%);
-            background: white; color: #333; padding: 8px 15px; border-radius: 5px;
-            font-size: 14px; font-weight: bold; white-space: nowrap; box-shadow: var(--shadow);
-        }
+.advantage-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12)}.advantage{padding:25px 22px 10px;border-right:1px solid rgba(255,255,255,.12)}.advantage:first-child{padding-left:0}.advantage:last-child{border-right:0}.advantage span{font-size:10px;color:#95a4ae;font-weight:900}.advantage h3{font-size:18px;margin:19px 0 9px;letter-spacing:-.02em}.advantage p{font-size:12px;line-height:1.7;color:#afbbc2;margin:0}
 
-        footer { background: var(--dark); color: #94a3b8; padding: 60px 5% 30px; text-align: center; }
-        
-        @media (max-width: 768px) {
-            .hero-content h2 { font-size: 2.2rem; }
-            nav { display: none; }
-            .inquiry-container { padding: 40px 20px; }
-        }
-    </style>
+.rfq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.rfq-copy h2,.contact-layout h2{font-size:clamp(32px,4vw,50px);line-height:1.04;letter-spacing:-.04em;margin:15px 0 18px}.rfq-copy>p{font-size:15px;line-height:1.7;color:var(--muted);max-width:460px}.contact-mini{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.contact-mini a{padding:10px 12px;border:1px solid var(--line);border-radius:12px;font-size:12px;font-weight:750;background:#fff}.mini-icon{display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:8px;background:#eef2f4;font-size:9px;margin-right:8px}.mini-icon i{font-size:12px;line-height:1}.mini-icon.wa-icon i{color:#25d366}
+.rfq-box{border:1px solid var(--line);border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 14px 40px rgba(17,31,43,.08)}.rfq-box-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line);font-size:9px;letter-spacing:.13em;font-weight:900;color:#71808b}.copy-state{font-size:9px;letter-spacing:0;color:#8b989f;font-weight:650}.rfq-box pre{margin:0;padding:22px 22px 18px;font:500 12px/1.8 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;color:#44515d;white-space:pre-wrap;background:#fbfcfc}.rfq-actions{display:flex;gap:10px;padding:0 18px 18px}.rfq-actions .btn{min-height:44px}
+
+.contact-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.contact-lead{font-size:16px;line-height:1.7;color:var(--muted);max-width:600px}.contact-buttons{display:grid;gap:10px;margin-top:28px;max-width:670px}.contact-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:15px;padding:16px 18px;border:1px solid var(--line);border-radius:15px;background:#fff}.contact-card:hover{border-color:#cdd6dc}.contact-card small{display:block;color:#85909a;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-card b{display:block;font-size:13px;margin-top:2px}.contact-button{width:100%;text-align:left;cursor:pointer}.big-icon{width:42px;height:42px;border-radius:12px;background:#f0f3f4;display:grid;place-items:center;font-size:10px;font-weight:900}.big-icon i{font-size:18px;line-height:1}.big-icon.wa-icon i{color:#25d366}.big-icon.we-icon i{color:#07c160}.contact-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}.contact-panel-title{font-weight:800;font-size:15px;margin-bottom:15px}.check-row{padding:10px 0;border-bottom:1px solid #eef1f2;font-size:12px}.check-row span{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;background:#edf2f3;color:#465966;font-size:10px;margin-right:8px}.contact-note{margin-top:18px;font-size:11px;line-height:1.7;color:#7b8791}
+
+.social-rail{position:fixed;right:16px;top:50%;transform:translateY(-50%);display:grid;gap:8px;z-index:90}.rail-btn{width:48px;min-height:48px;border:0;border-radius:15px;background:#fff;box-shadow:0 10px 30px rgba(17,31,43,.14);display:grid;place-items:center;cursor:pointer;position:relative}.rail-btn:hover{transform:translateX(-2px)}.rail-btn i{font-size:20px;line-height:1}.rail-btn.whatsapp i{color:#25d366}.rail-btn.wechat i{color:#07c160}.rail-label{position:absolute;right:57px;white-space:nowrap;padding:7px 10px;background:#0f1b25;color:#fff;border-radius:8px;font-size:10px;opacity:0;pointer-events:none;transform:translateX(6px);transition:.18s}.rail-btn:hover .rail-label{opacity:1;transform:none}
+
+.modal{display:none}.modal.is-open{display:block}.modal-backdrop{position:fixed;inset:0;background:rgba(10,18,24,.58);backdrop-filter:blur(4px);z-index:199}.modal-card{position:fixed;z-index:200;top:50%;left:50%;transform:translate(-50%,-50%);width:min(420px,calc(100% - 32px));background:#fff;border-radius:22px;padding:28px;box-shadow:0 30px 100px rgba(0,0,0,.25)}.modal-close{position:absolute;right:15px;top:13px;background:transparent;border:0;font-size:28px;color:#81909b;cursor:pointer}.modal-card h3{font-size:25px;line-height:1.1;margin:12px 0}.modal-card p{font-size:12px;color:var(--muted);line-height:1.7}
+.id-box{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 6px;padding:15px 16px;border:1px dashed #bcc7ce;border-radius:14px;background:#f8fafb}.id-label{font-size:9px;font-weight:900;letter-spacing:.16em;color:#8a959f}.id-box strong{flex:1;font-size:20px;letter-spacing:.02em}.id-copy{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;font-size:11px;font-weight:800;cursor:pointer}.id-copy:hover{border-color:#cdd6dc}.modal-hint{margin-top:14px;font-size:11px;color:#7b8791}
+
+/* ===== MEDIA / BUSINESS FLOW IMAGERY ===== */
+.feature-media{position:relative;margin:-28px -28px 24px;aspect-ratio:16/10;overflow:hidden;background:#eef2f4;border-radius:17px 17px 0 0}
+.feature-media img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .6s ease}
+.feature-card:hover .feature-media img{transform:scale(1.04)}
+.section-media{position:relative;margin:0 0 42px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#eef2f4}
+.section-media img{width:100%;display:block;aspect-ratio:2.35/1;object-fit:cover;object-position:center 42%}
+.section-media figcaption{position:absolute;inset:auto 0 0 0;padding:30px 30px 26px;background:linear-gradient(to top,rgba(9,17,24,.86),rgba(9,17,24,0));color:#fff}
+.section-media figcaption b{display:block;font-size:16px;letter-spacing:-.01em;margin-bottom:4px}
+.section-media figcaption span{display:block;font-size:12px;line-height:1.6;color:#c4d0d9;font-weight:600;max-width:640px}
+
+.site-footer{border-top:1px solid var(--line);padding:26px 0}.footer-grid{display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:20px;font-size:10px;color:#83909b}.footer-grid strong{font-size:12px;color:var(--ink);letter-spacing:.05em}.footer-grid strong span{color:var(--brand-red)}.footer-grid p{margin:3px 0 0}.footer-grid div:nth-child(2){display:flex;gap:18px}.footer-grid a{font-weight:800;color:#576570}
+
+@media (max-width:980px){
+  .nav{display:none;position:absolute;left:20px;right:20px;top:70px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:4px}.nav.open{display:flex}.nav a{padding:11px 12px}.nav-cta{text-align:center}.menu-toggle{display:block}
+  .hero-grid,.rfq-layout,.contact-layout{grid-template-columns:1fr}.hero-grid{gap:34px}.hero-visual{min-height:480px}.feature-grid.three{grid-template-columns:1fr}.category-grid{grid-template-columns:1fr}.category-card.featured{grid-column:auto}.process-wrap{grid-template-columns:1fr 1fr}.advantage-grid{grid-template-columns:1fr 1fr}.advantage{border-bottom:1px solid rgba(255,255,255,.12)}.trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div{border-bottom:1px solid rgba(255,255,255,.09)}.section-heading.two-col{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .container{width:min(var(--container),calc(100% - 26px))}.section-pad{padding:76px 0}.hero{padding-top:64px}.hero-lead{font-size:15px}.hero-actions .btn{width:100%}.hero-notes span{font-size:10px}.hero-visual{padding:16px;border-radius:22px;min-height:440px}.sourcing-board{min-height:356px}.simple-board{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);gap:8px;padding-left:2px;padding-right:2px}.rfq-card{width:auto}.supplier-node.compact{padding-left:12px}.decision-card{margin-top:0}.ship-card{padding:10px}.van-lineart{left:5%;width:90%;bottom:0}.trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div{padding:16px}.trust-grid>div:first-child{padding-left:16px}.advantage-grid{grid-template-columns:1fr}.advantage{padding:22px 0;border-right:0}.process-wrap{grid-template-columns:1fr}.rfq-layout{gap:35px}.rfq-actions{flex-direction:column}.rfq-actions .btn{width:100%}.social-rail{right:10px}.rail-btn{width:44px;min-height:44px}.footer-grid{grid-template-columns:1fr}.footer-grid div:nth-child(2){flex-direction:column;gap:3px}.footer-grid div:last-child{text-align:left}.brand{min-width:0}.section-media{margin-bottom:30px;border-radius:16px}.section-media img{aspect-ratio:16/10}.section-media figcaption{padding:20px 18px 16px}.section-media figcaption b{font-size:14px}.section-media figcaption span{font-size:11px}.feature-media{margin:-22px -22px 20px}.feature-card{padding:22px}
+}
+
+</style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <div class="header-container">
-            <div class="logo"><h1>SYG<span>PARTS</span></h1></div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#supply-chain">Solutions</a></li>
-                    <li><a href="#brands">Brands</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="SYGPARTS Home">
+        <span class="brand-name">SYG<span>PARTS</span></span>
+        <span class="brand-copy"><small>CHINA AUTO PARTS SOURCING</small></span>
+      </a>
 
-    <div class="social-sticky">
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#solutions">Solutions</a>
+        <a href="#coverage">What We Source</a>
+        <a href="#process">How It Works</a>
+        <a href="#rfq">RFQ Template</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Your <span>Ultimate Hub</span> for China's Auto Parts</h2>
-            <p>Integrating full supply chain resources for European, American, Japanese, Korean, and Chinese vehicles. One-stop solution, zero hassle.</p>
-            <div class="btn-group">
-                <a href="#contact" class="btn btn-primary">Get A Quote Now</a>
-                <a href="#supply-chain" class="btn btn-outline">Our Solutions</a>
-            </div>
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> China-based sourcing for aftermarket buyers</div>
+          <h1>One RFQ.<br><span>Better China sourcing.</span></h1>
+          <p class="hero-lead">We help importers and distributors find the right China suppliers, compare offers clearly, coordinate quality checks, and consolidate multi-supplier orders into one shipment.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#rfq">Start an RFQ <span>↗</span></a>
+            <a class="btn btn-secondary" href="#process">See how it works</a>
+          </div>
+
+          <div class="hero-notes">
+            <span>Aftermarket</span>
+            <span>Commercial Vehicles</span>
+            <span>Lighting & Exterior</span>
+            <span>Hard-to-source</span>
+          </div>
         </div>
+
+        <div class="hero-visual" aria-label="Visual showing one RFQ connected to suppliers, QC, consolidation and shipping">
+          <div class="visual-topline">
+            <span>BUYER REQUEST</span>
+            <span>SYGPARTS DESK</span>
+          </div>
+          <div class="sourcing-board simple-board">
+            <div class="rfq-card floating-card">
+              <div class="card-label">YOUR LIST</div>
+              <div class="rfq-mini-row"><b>OE / Part No.</b><span>12 lines</span></div>
+              <div class="rfq-mini-row"><b>Vehicle</b><span>Transit / LCV</span></div>
+              <div class="rfq-mini-row"><b>Qty</b><span>Mixed</span></div>
+              <div class="rfq-status">RFQ RECEIVED</div>
+            </div>
+
+            <div class="match-arrow" aria-hidden="true">→</div>
+
+            <div class="supplier-area">
+              <div class="supplier-heading">SOURCE OPTIONS</div>
+              <div class="supplier-node compact"><span class="node-dot"></span><div><b>Supplier A</b><small>Fitment match</small></div><em>01</em></div>
+              <div class="supplier-node compact"><span class="node-dot"></span><div><b>Supplier B</b><small>Better MOQ</small></div><em>02</em></div>
+              <div class="supplier-node compact"><span class="node-dot"></span><div><b>Supplier C</b><small>Backup source</small></div><em>03</em></div>
+            </div>
+
+            <div class="decision-card floating-card">
+              <div class="card-label">SYGPARTS CHECK</div>
+              <strong>Compare · Verify · Consolidate</strong>
+              <div class="decision-pills"><span>Price</span><span>MOQ</span><span>Lead time</span><span>QC</span></div>
+            </div>
+
+            <div class="ship-card floating-card">
+              <div class="ship-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><path d="M9 19h28v25H9zM37 27h10l8 9v8H37z" stroke="currentColor" stroke-width="3"/><path d="M14 49a5 5 0 1 0 10 0M42 49a5 5 0 1 0 10 0M37 35h16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+              </div>
+              <div><b>One shipment</b><small>Multi-supplier consolidation</small></div>
+            </div>
+
+            <div class="van-lineart" aria-hidden="true">
+              <svg viewBox="0 0 760 290" fill="none">
+                <path d="M74 194v-84c0-18 15-33 33-33h376c27 0 50 17 59 43l29 74H74Z" stroke="currentColor" stroke-width="4"/>
+                <path d="M528 77h76c23 0 42 14 51 35l30 82H556" stroke="currentColor" stroke-width="4"/>
+                <path d="M103 77v117M553 105h42M74 194h616M148 194c0 24-19 43-43 43s-43-19-43-43h86ZM632 194c0 24-19 43-43 43s-43-19-43-43h86Z" stroke="currentColor" stroke-width="4"/>
+                <path d="M160 96h126M310 96h110M445 96h64M585 124h52" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <path d="M127 137h98M254 137h124M398 137h86" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+              </svg>
+            </div>
+          </div>
+          <div class="visual-caption"><strong>China manufacturing access</strong><span>without managing dozens of factories yourself.</span></div>
+        </div>
+      </div>
     </section>
 
-    <section id="supply-chain" class="supply-chain">
-        <div class="section-title">
-            <h3>Supply Chain Integration</h3>
-            <div class="divider"></div>
-            <p style="margin-top:15px">We are not just a supplier; we are your strategic partner in China.</p>
-        </div>
-        <div class="chain-steps">
-            <div class="step-card">
-                <div class="step-icon"><i class="fas fa-search-plus"></i></div>
-                <h4>Sourcing</h4>
-                <p>Direct access to thousands of verified Tier-1 factories across China.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon"><i class="fas fa-check-double"></i></div>
-                <h4>QC Inspection</h4>
-                <p>Strict quality control and real-time photo/video reporting before shipping.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon"><i class="fas fa-box-open"></i></div>
-                <h4>Consolidation</h4>
-                <p>Combine multiple factory orders into one shipment to save your cost.</p>
-            </div>
-        </div>
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span class="trust-kicker">BASED IN</span><strong>Ningbo, China</strong></div>
+        <div><span class="trust-kicker">FOCUS</span><strong>Automotive Aftermarket</strong></div>
+        <div><span class="trust-kicker">MODEL</span><strong>Sourcing → Procurement</strong></div>
+        <div><span class="trust-kicker">CONTACT</span><strong>info@sygparts.com</strong></div>
+      </div>
     </section>
 
-    <section id="brands" class="brands-section">
-        <div class="section-title">
-            <h3>Full Vehicle Series Coverage</h3>
-            <div class="divider"></div>
+    <section class="section-pad" id="solutions">
+      <div class="container">
+        <div class="section-heading two-col">
+          <div>
+            <div class="eyebrow">WHAT WE DO</div>
+            <h2>We turn a messy parts request into a workable China supply plan.</h2>
+          </div>
+          <p>One point of contact for supplier search, offer comparison, product checks and multi-supplier coordination. Start with a list, not a catalogue.</p>
         </div>
-        <div class="brand-grid">
-            <div class="brand-card"><i class="fas fa-euro-sign"></i><h4>European Series</h4><small>VW, BMW, Mercedes, etc.</small></div>
-            <div class="brand-card"><i class="fas fa-flag-usa"></i><h4>American Series</h4><small>Ford, GM, Jeep, etc.</small></div>
-            <div class="brand-card"><i class="fas fa-torii-gate"></i><h4>Japanese Series</h4><small>Toyota, Honda, Nissan, etc.</small></div>
-            <div class="brand-card"><i class="fas fa-shuttle-van"></i><h4>Korean Series</h4><small>Hyundai, Kia, etc.</small></div>
-            <div class="brand-card"><i class="fas fa-bolt"></i><h4>Chinese Series</h4><small>BYD, Geely, Chery, etc.</small></div>
+
+        <div class="feature-grid three">
+          <article class="feature-card">
+            <div class="feature-media"><img src="assets/images/parts-warehouse.jpg" alt="Organised auto parts warehouse in China with headlamps and body panels on racks" loading="lazy" decoding="async"></div>
+            <div class="icon-box">01</div>
+            <h3>Source & Match</h3>
+            <p>Find suitable factories or trading sources based on product, fitment, target market, MOQ and project needs.</p>
+            <span class="card-line">Supplier fit first</span>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media"><img src="assets/images/qc-inspection.jpg" alt="Quality inspector examining an automotive headlamp against a spec sheet" loading="lazy" decoding="async"></div>
+            <div class="icon-box">02</div>
+            <h3>Compare & Verify</h3>
+            <p>Normalize quotations and compare price, MOQ, lead time, packaging, certification and sample requirements.</p>
+            <span class="card-line">Make options comparable</span>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media"><img src="assets/images/packing-consolidation.jpg" alt="Warehouse team packing automotive parts into export cartons on pallets" loading="lazy" decoding="async"></div>
+            <div class="icon-box">03</div>
+            <h3>QC & Consolidate</h3>
+            <p>Coordinate inspection, photo/video checks, labeling and multiple supplier orders into a cleaner shipment plan.</p>
+            <span class="card-line">One shipment, less friction</span>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="inquiry-section">
-        <div class="inquiry-container">
-            <h3 style="font-size: 2.2rem; margin-bottom: 15px;">Get In Touch</h3>
-            <p style="opacity: 0.8; max-width: 600px; margin: 0 auto;">Skip the forms. Send us your OE numbers or inquiry list directly via email or social media. We will respond within 24 hours.</p>
-            
-            <div class="contact-methods">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h4>Email Inquiry</h4>
-                    <a href="mailto:info@sygparts.com">info@sygparts.com</a>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>Office Location</h4>
-                    <a href="#">Ningbo, Zhejiang, China</a>
-                </div>
-            </div>
+    <section class="section-pad section-alt" id="coverage">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">WHAT WE SOURCE</div>
+            <h2>Focused enough to be useful. Broad enough to solve the RFQ.</h2>
+          </div>
+          <p>We lead with categories where supplier fragmentation makes sourcing time-consuming, then expand with the customer relationship.</p>
         </div>
+
+        <figure class="section-media">
+          <img src="assets/images/parts-flatlay.jpg" alt="Automotive parts laid out flat: brake disc, headlamp, air filter, spark plugs and shock absorber" loading="lazy" decoding="async">
+          <figcaption>
+            <b>The parts behind a typical RFQ</b>
+            <span>Lighting, body and exterior, brake, filtration and suspension — checked against OE references before we shortlist a source.</span>
+          </figcaption>
+        </figure>
+
+        <div class="category-grid">
+          <article class="category-card featured">
+            <div class="category-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M8 29c3-10 8-15 16-15s13 5 16 15v8H8v-8Z" stroke="currentColor" stroke-width="2.5"/><path d="M13 23h10M25 23h10M12 37a4 4 0 1 0 8 0M28 37a4 4 0 1 0 8 0" stroke="currentColor" stroke-width="2.5"/></svg></div>
+            <div><span class="category-tag">CORE</span><h3>Commercial Vehicle / VAN</h3><p>Platform-led sourcing for Transit, Sprinter, Ducato/Boxer/Jumper, Master, Daily, Crafter and related LCV needs.</p></div>
+          </article>
+          <article class="category-card"><div class="category-icon">L</div><h3>Automotive Lighting</h3><p>Headlamp, tail lamp, fog lamp, DRL and lighting-related components.</p></article>
+          <article class="category-card"><div class="category-icon">B</div><h3>Body & Exterior</h3><p>Bumper, fender, grille, hood, mirror, brackets, trims and plastic body parts.</p></article>
+          <article class="category-card"><div class="category-icon">M</div><h3>Mechanical & Electrical</h3><p>Cooling, brake, suspension, sensors, electrical and other aftermarket lines as projects require.</p></article>
+          <article class="category-card"><div class="category-icon">?</div><h3>Hard-to-Source Parts</h3><p>Send the OE number, vehicle information or photos. We can assess sourcing feasibility first.</p></article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p style="font-weight:bold; color:white; margin-bottom:10px;">SYGPARTS SUPPLY CHAIN SOLUTIONS</p>
-        <p>&copy; 2026 All Rights Reserved. Based in China, Connecting the World.</p>
-    </footer>
-
-    <div class="float-contact-group">
-        <div class="float-btn wechat-btn" title="Contact via WeChat">
-            <i class="fab fa-weixin"></i>
+    <section class="section-pad" id="process">
+      <div class="container">
+        <div class="section-heading two-col">
+          <div>
+            <div class="eyebrow">HOW IT WORKS</div>
+            <h2>Simple for the buyer. Structured behind the scenes.</h2>
+          </div>
+          <p>You do not need to manage multiple China suppliers directly. Give us the requirement and we handle the coordination layer.</p>
         </div>
-        <a href="https://wa.me/+8618358487817" class="float-btn whatsapp-btn" target="_blank" title="Contact via WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+
+        <div class="process-wrap">
+          <div class="process-step"><span>01</span><div><h3>Send your RFQ</h3><p>OE numbers, photos, vehicle fitment, quantity, target market and any must-have requirements.</p></div></div>
+          <div class="process-step"><span>02</span><div><h3>We shortlist sources</h3><p>Match suppliers by capability, product fit and commercial requirements.</p></div></div>
+          <div class="process-step"><span>03</span><div><h3>Compare & clarify</h3><p>Bring quotations into the same structure so you can see the real trade-offs.</p></div></div>
+          <div class="process-step"><span>04</span><div><h3>Sample / QC coordination</h3><p>Support sampling, inspection requests, packaging checks and photo/video reporting as needed.</p></div></div>
+          <div class="process-step"><span>05</span><div><h3>Consolidate & ship</h3><p>Coordinate multi-supplier cargo into a cleaner export process and shipment plan.</p></div></div>
+        </div>
+
+        <figure class="section-media" style="margin-top:42px;margin-bottom:0">
+          <img src="assets/images/container-loading.jpg" alt="Forklift loading palletised export cartons into a shipping container at a loading dock" loading="lazy" decoding="async">
+          <figcaption>
+            <b>Multi-supplier cargo, one shipment</b>
+            <span>Orders from several factories are labelled, palletised and loaded together — so you track one container instead of five suppliers.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-pad section-dark" id="why">
+      <div class="container">
+        <div class="section-heading dark two-col">
+          <div>
+            <div class="eyebrow">WHY SYGPARTS</div>
+            <h2>Your supplier list is not the value. Your sourcing decisions are.</h2>
+          </div>
+          <p>For smaller importers, the hidden cost is often not the factory price. It is the time, uncertainty and coordination required to get the right part from the right source.</p>
+        </div>
+
+        <div class="advantage-grid">
+          <div class="advantage"><span>01</span><h3>Single point of contact</h3><p>Reduce the back-and-forth across factories, traders, QC and shipping.</p></div>
+          <div class="advantage"><span>02</span><h3>Parts know-how</h3><p>Start from OE / vehicle / product requirements instead of generic supplier directories.</p></div>
+          <div class="advantage"><span>03</span><h3>Multi-supplier leverage</h3><p>Combine complementary suppliers when one factory cannot cover the whole list.</p></div>
+          <div class="advantage"><span>04</span><h3>Built for small & mid-size buyers</h3><p>Useful when your volumes are too fragmented to justify managing many China relationships yourself.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="rfq">
+      <div class="container rfq-layout">
+        <div class="rfq-copy">
+          <div class="eyebrow">NO WEB FORM REQUIRED</div>
+          <h2>Copy this RFQ and send it directly to us.</h2>
+          <p>Use email or WhatsApp. A simple, complete request helps us respond faster and avoid unnecessary clarification.</p>
+          <div class="contact-mini">
+            <a href="mailto:info@sygparts.com"><span class="mini-icon"><i class="fas fa-envelope"></i></span> info@sygparts.com</a>
+            <a href="#contact" id="rfqWhatsappLink"><span class="mini-icon wa-icon"><i class="fab fa-whatsapp"></i></span> WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="rfq-box">
+          <div class="rfq-box-head"><span>SYGPARTS RFQ TEMPLATE</span><span class="copy-state" id="copyState">Ready to copy</span></div>
+          <pre id="rfqTemplate">Hello SYGPARTS,
+
+We are looking for China sourcing support.
+
+Company:
+Country / Market:
+Website:
+
+Parts needed:
+1. OE / Part No.:
+   Vehicle / Year:
+   Product:
+   Qty:
+2. OE / Part No.:
+   Vehicle / Year:
+   Product:
+   Qty:
+(Attach your Excel / PDF / photos if available.)
+
+Target market / certification requirements:
+Target delivery date:
+Packaging / labeling requirements:
+Other requirements:
+
+Please let me know what information you need for quotation.
+
+Best regards,
+[Name]</pre>
+          <div class="rfq-actions">
+            <button class="btn btn-dark" id="copyRfq">Copy RFQ template</button>
+            <a class="btn btn-primary" id="emailRfq" href="mailto:info@sygparts.com?subject=SYGPARTS%20RFQ%20Request">Open email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-alt" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <div class="eyebrow">CONTACT</div>
+          <h2>Tell us what you are trying to buy.</h2>
+          <p class="contact-lead">You do not need to know the Chinese factory. Start with the part requirement, vehicle, OE number, photo or purchasing list.</p>
+          <div class="contact-buttons">
+            <a class="contact-card" href="mailto:info@sygparts.com"><span class="big-icon"><i class="fas fa-envelope"></i></span><span><small>Email</small><b>info@sygparts.com</b></span><span>↗</span></a>
+            <a class="contact-card" href="#" id="whatsappMain"><span class="big-icon wa-icon"><i class="fab fa-whatsapp"></i></span><span><small>WhatsApp</small><b>Start a conversation</b></span><span>↗</span></a>
+            <button class="contact-card contact-button" id="wechatMain"><span class="big-icon we-icon"><i class="fab fa-weixin"></i></span><span><small>WeChat</small><b>WeChat ID: sygauto</b></span><span>↗</span></button>
+          </div>
+        </div>
+        <div class="contact-panel">
+          <div class="contact-panel-title">Before you send</div>
+          <div class="check-row"><span>✓</span> OE or part number</div>
+          <div class="check-row"><span>✓</span> Vehicle / model / year when relevant</div>
+          <div class="check-row"><span>✓</span> Quantity or annual demand</div>
+          <div class="check-row"><span>✓</span> Destination market</div>
+          <div class="check-row"><span>✓</span> Photos / catalogue / Excel when available</div>
+          <div class="contact-note">The more precise the input, the faster we can assess supplier fit.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="social-rail" aria-label="Quick contact">
+    <a class="rail-btn whatsapp" href="#" id="whatsappRail" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i><span class="rail-label">WhatsApp</span></a>
+    <button class="rail-btn wechat" id="wechatRail" aria-label="WeChat" title="WeChat"><i class="fab fa-weixin"></i><span class="rail-label">WeChat</span></button>
+  </aside>
+
+  <div class="modal" id="wechatModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="wechatModal"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="wechatTitle">
+      <button class="modal-close" data-close="wechatModal" aria-label="Close">×</button>
+      <div class="eyebrow">WECHAT</div>
+      <h3 id="wechatTitle">Add SYGPARTS on WeChat</h3>
+      <p>Search the WeChat ID below to add our sourcing desk directly.</p>
+      <div class="id-box">
+        <span class="id-label">WECHAT ID</span>
+        <strong id="wechatIdText">sygauto</strong>
+        <button class="id-copy" type="button" id="copyWechat">Copy ID</button>
+      </div>
+      <p class="modal-hint">Prefer another channel? Use email or WhatsApp and we will reply within one working day.</p>
+      <a class="btn btn-dark" href="mailto:info@sygparts.com?subject=SYGPARTS%20WeChat%20Contact">Use email instead</a>
     </div>
+  </div>
 
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>SYG<span>PARTS</span></strong><p>China Auto Parts Sourcing</p></div>
+      <div><span>Based in Ningbo, China</span><span>info@sygparts.com</span></div>
+      <div><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script>
+// SYGPARTS website – contact configuration.
+// WhatsApp: number is never displayed on the page, links open click-to-chat directly.
+const CONFIG = {
+  email: 'info@sygparts.com',
+  whatsappUrl: 'https://wa.me/8618358487817?text=Hello%20SYGPARTS%2C%20I%20would%20like%20help%20with%20China%20auto%20parts%20sourcing.',
+  wechatId: 'sygauto'
+};
+
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+// Mobile navigation
+const menuToggle = $('#menuToggle');
+const siteNav = $('#siteNav');
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener('click', () => {
+    const open = siteNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+  $$('.nav a', siteNav).forEach(a => a.addEventListener('click', () => {
+    siteNav.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }));
+}
+
+// WhatsApp links: one place to update the chat link.
+['#whatsappRail', '#whatsappMain', '#rfqWhatsappLink'].forEach(id => {
+  const el = $(id);
+  if (el) el.href = CONFIG.whatsappUrl;
+});
+
+// Copyable RFQ template
+const rfqTemplate = $('#rfqTemplate');
+const copyBtn = $('#copyRfq');
+const copyState = $('#copyState');
+const copyText = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch { ok = false; }
+    ta.remove();
+    return ok;
+  }
+};
+if (rfqTemplate && copyBtn) {
+  copyBtn.addEventListener('click', async () => {
+    const text = rfqTemplate.textContent.trim();
+    const ok = await copyText(text);
+    if (copyState) copyState.textContent = ok ? 'Copied ✓' : 'Select & copy manually';
+    setTimeout(() => { if (copyState) copyState.textContent = 'Ready to copy'; }, 2200);
+  });
+}
+
+// Build a useful mailto body from the visible template.
+const emailRfq = $('#emailRfq');
+if (emailRfq && rfqTemplate) {
+  const subject = 'SYGPARTS RFQ Request';
+  const body = rfqTemplate.textContent.trim();
+  emailRfq.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// WeChat modal – shows the WeChat ID, with a copy helper.
+const modal = $('#wechatModal');
+const openWechat = () => { if (modal) { modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false'); } };
+const closeWechat = () => { if (modal) { modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true'); } };
+['#wechatRail', '#wechatMain'].forEach(id => { const el = $(id); if (el) el.addEventListener('click', openWechat); });
+$$('[data-close="wechatModal"]').forEach(el => el.addEventListener('click', closeWechat));
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeWechat(); });
+
+const copyWechatBtn = $('#copyWechat');
+if (copyWechatBtn) {
+  copyWechatBtn.addEventListener('click', async () => {
+    const ok = await copyText(CONFIG.wechatId);
+    copyWechatBtn.textContent = ok ? 'Copied ✓' : CONFIG.wechatId;
+    setTimeout(() => { copyWechatBtn.textContent = 'Copy ID'; }, 2200);
+  });
+}
+
+// Make it obvious which contact email the current page uses.
+$$('a[href^="mailto:"]').forEach(el => el.setAttribute('aria-label', `Email SYGPARTS at ${CONFIG.email}`));
+
+</script>
 </body>
 </html>
