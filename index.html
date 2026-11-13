@@ -133,6 +133,21 @@ h1{font-size:clamp(44px,6.2vw,76px);line-height:.98;letter-spacing:-.05em;margin
 
 .contact-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.contact-lead{font-size:16px;line-height:1.7;color:var(--muted);max-width:600px}.contact-buttons{display:grid;gap:10px;margin-top:28px;max-width:670px}.contact-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:15px;padding:16px 18px;border:1px solid var(--line);border-radius:15px;background:#fff}.contact-card:hover{border-color:#cdd6dc}.contact-card small{display:block;color:#85909a;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-card b{display:block;font-size:13px;margin-top:2px}.contact-button{width:100%;text-align:left;cursor:pointer}.big-icon{width:42px;height:42px;border-radius:12px;background:#f0f3f4;display:grid;place-items:center;font-size:10px;font-weight:900}.big-icon i{font-size:18px;line-height:1}.big-icon.wa-icon svg{color:#25d366}.big-icon.we-icon svg{color:#07c160}.contact-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}.contact-panel-title{font-weight:800;font-size:15px;margin-bottom:15px}.check-row{padding:10px 0;border-bottom:1px solid #eef1f2;font-size:12px}.check-row span{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;background:#edf2f3;color:#465966;font-size:10px;margin-right:8px}.contact-note{margin-top:18px;font-size:11px;line-height:1.7;color:#7b8791}
 
+/* ===== INQUIRY FORM (Formspree) ===== */
+.rfq-form{display:grid;gap:12px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-field{display:grid;gap:5px}
+.form-field label{font-size:9px;font-weight:900;letter-spacing:.13em;color:#71808b;text-transform:uppercase}
+.form-field input,.form-field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 13px;font:inherit;font-size:13px;color:var(--ink);background:#fbfcfc;transition:border-color .15s}
+.form-field input:focus,.form-field textarea:focus{outline:none;border-color:var(--accent);background:#fff}
+.form-field textarea{min-height:96px;resize:vertical;line-height:1.6}
+.form-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:2px}
+.form-status{font-size:11px;line-height:1.6;color:#7b8791;min-height:16px;flex:1}
+.form-status.ok{color:#1c7c3c;font-weight:700}
+.form-status.err{color:#b3261e;font-weight:700}
+.rfq-form .btn{min-height:46px}
+@media (max-width:480px){.form-row{grid-template-columns:1fr}}
+
 .social-rail{position:fixed;right:16px;top:50%;transform:translateY(-50%);display:grid;gap:8px;z-index:90}.rail-btn{width:48px;min-height:48px;border:0;border-radius:15px;background:#fff;box-shadow:0 10px 30px rgba(17,31,43,.14);display:grid;place-items:center;cursor:pointer;position:relative}.rail-btn:hover{transform:translateX(-2px)}.rail-btn i{font-size:20px;line-height:1}.rail-btn.whatsapp svg{color:#25d366}.rail-btn.wechat svg{color:#07c160}.rail-label{position:absolute;right:57px;white-space:nowrap;padding:7px 10px;background:#0f1b25;color:#fff;border-radius:8px;font-size:10px;opacity:0;pointer-events:none;transform:translateX(6px);transition:.18s}.rail-btn:hover .rail-label{opacity:1;transform:none}
 
 .modal{display:none}.modal.is-open{display:block}.modal-backdrop{position:fixed;inset:0;background:rgba(10,18,24,.58);backdrop-filter:blur(4px);z-index:199}.modal-card{position:fixed;z-index:200;top:50%;left:50%;transform:translate(-50%,-50%);width:min(420px,calc(100% - 32px));background:#fff;border-radius:22px;padding:28px;box-shadow:0 30px 100px rgba(0,0,0,.25)}.modal-close{position:absolute;right:15px;top:13px;background:transparent;border:0;font-size:28px;color:#81909b;cursor:pointer}.modal-card h3{font-size:25px;line-height:1.1;margin:12px 0}.modal-card p{font-size:12px;color:var(--muted);line-height:1.7}
@@ -387,9 +402,9 @@ h1{font-size:clamp(44px,6.2vw,76px);line-height:.98;letter-spacing:-.05em;margin
     <section class="section-pad" id="rfq">
       <div class="container rfq-layout">
         <div class="rfq-copy">
-          <div class="eyebrow">NO WEB FORM REQUIRED</div>
+          <div class="eyebrow">SEND IT YOUR WAY</div>
           <h2>Copy this RFQ and send it directly to us.</h2>
-          <p>Use email or WhatsApp. A simple, complete request helps us respond faster and avoid unnecessary clarification.</p>
+          <p>Use the quick form below, or email / WhatsApp. A simple, complete request helps us respond faster and avoid unnecessary clarification.</p>
           <div class="contact-mini">
             <a href="mailto:info@sygparts.com"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span> info@sygparts.com</a>
             <a href="#contact" id="rfqWhatsappLink"><span class="mini-icon wa-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.14-.25-.01-.39.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg></span> WhatsApp</a>
@@ -447,13 +462,46 @@ Best regards,
           </div>
         </div>
         <div class="contact-panel">
-          <div class="contact-panel-title">Before you send</div>
-          <div class="check-row"><span>✓</span> OE or part number</div>
-          <div class="check-row"><span>✓</span> Vehicle / model / year when relevant</div>
-          <div class="check-row"><span>✓</span> Quantity or annual demand</div>
-          <div class="check-row"><span>✓</span> Destination market</div>
-          <div class="check-row"><span>✓</span> Photos / catalogue / Excel when available</div>
-          <div class="contact-note">The more precise the input, the faster we can assess supplier fit.</div>
+          <div class="contact-panel-title">Send a quick inquiry</div>
+          <!-- FormSubmit backend: submissions are emailed to info@sygparts.com (no registration required). -->
+          <form class="rfq-form" id="rfqForm" method="POST" action="https://formsubmit.co/info@sygparts.com" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">Name *</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="f-company">Company</label>
+                <input id="f-company" name="company" type="text" autocomplete="organization">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-email">Email *</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="f-country">Country / Market</label>
+                <input id="f-country" name="country" type="text" autocomplete="country-name">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-parts">Parts needed *</label>
+              <textarea id="f-parts" name="parts" placeholder="OE / part number, vehicle / year, product, quantity — one item per line" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="f-requirements">Other requirements</label>
+              <input id="f-requirements" name="requirements" type="text" placeholder="Certification, target delivery date, packaging, photos available…">
+            </div>
+            <input type="hidden" name="_subject" value="Website inquiry — sygparts.com">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-foot">
+              <button class="btn btn-primary" type="submit" id="formSubmit">Send inquiry</button>
+              <span class="form-status" id="formStatus">We reply within one working day.</span>
+            </div>
+          </form>
+          <p class="contact-note">Prefer email or WhatsApp? Use the options on the left — the more precise the input (OE number, vehicle, quantity, destination), the faster we can assess supplier fit.</p>
         </div>
       </div>
     </section>
@@ -495,7 +543,12 @@ Best regards,
 const CONFIG = {
   email: 'info@sygparts.com',
   whatsappUrl: 'https://wa.me/8618358487817?text=Hello%20SYGPARTS%2C%20I%20would%20like%20help%20with%20China%20auto%20parts%20sourcing.',
-  wechatId: 'sygauto'
+  wechatId: 'sygauto',
+  // Form backend: FormSubmit (https://formsubmit.co) — no registration needed.
+  // Submissions are emailed directly to info@sygparts.com.
+  // One-time activation: after the first submit, FormSubmit sends a confirmation
+  // email to info@sygparts.com — click it once and the form is live.
+  formAjaxUrl: 'https://formsubmit.co/ajax/info@sygparts.com'
 };
 
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -520,6 +573,52 @@ if (menuToggle && siteNav) {
   const el = $(id);
   if (el) el.href = CONFIG.whatsappUrl;
 });
+
+// Inquiry form: AJAX submit to FormSubmit, inline status, no page redirect.
+// Submissions are delivered to info@sygparts.com by FormSubmit.
+const rfqForm = $('#rfqForm');
+const formStatus = $('#formStatus');
+const formSubmit = $('#formSubmit');
+if (rfqForm && formStatus && formSubmit) {
+  rfqForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!CONFIG.formAjaxUrl) {
+      formStatus.textContent = 'Form is not configured yet — please use email or WhatsApp.';
+      formStatus.classList.add('err');
+      return;
+    }
+    if (!rfqForm.checkValidity()) {
+      rfqForm.reportValidity();
+      return;
+    }
+    formSubmit.disabled = true;
+    formSubmit.textContent = 'Sending…';
+    formStatus.classList.remove('ok', 'err');
+    formStatus.textContent = '';
+    try {
+      const res = await fetch(CONFIG.formAjaxUrl, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(rfqForm)
+      });
+      let ok = res.ok;
+      try { const data = await res.json(); if (data && String(data.success) === 'false') ok = false; } catch { /* non-JSON response */ }
+      if (ok) {
+        rfqForm.reset();
+        formStatus.textContent = 'Sent ✓ We will get back to you within one working day.';
+        formStatus.classList.add('ok');
+      } else {
+        throw new Error('FormSubmit error');
+      }
+    } catch {
+      formStatus.textContent = 'Could not send — please email info@sygparts.com directly.';
+      formStatus.classList.add('err');
+    } finally {
+      formSubmit.disabled = false;
+      formSubmit.textContent = 'Send inquiry';
+    }
+  });
+}
 
 // Copyable RFQ template
 const rfqTemplate = $('#rfqTemplate');
